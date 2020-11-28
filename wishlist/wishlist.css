@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    height: 700000px;
+    
+    background-color: #f6f5f7;
+    font-family: 'Nunito', sans-serif;
 }
-
 
 #menu {
     display: flex;
@@ -19,59 +20,65 @@ body {
     fill: #fbf6f0;
 }
 
-#menu input {
+.search {
     height: 50px;
     margin: 5px 10px 0px 10px;
     width: 350px;
-    
 }
 
 #intro {
     display: flex;
     width: 100%;
-    background-color: #f4f4f2;
+    height: 500px;
+    background-color: white;
+    justify-content: space-between;
 }
 
 #intro img {
-    
     height: 500px;
     object-fit: cover;
-    padding-left: 710px;
     
+} 
+
+#introText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#intro h2 {
+#introText h2{
     font-size: 70px;
-    position: absolute;
-    left: 230px;
 }
 
-#intro p {
-    font-size: 30px;
-    position: absolute;
-    top: 200px;
-    left: 200px;
+#introText p {
+    font-size: 50px;
 }
+
 
 #main {
     margin: 100px 100px 0px 100px;
-    
+    justify-content: space-around;
     display: flex;
 }
 
-.schools { 
+.schools {
     width: 250px;
     background-color: #ebebeb;
-    
-
+    height: 340px;
+    margin-bottom: 50px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 .schools img {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
-    padding-top: 20px;
-    padding-left: 25px;
+    
 }
 
 .schools a {
@@ -79,4 +86,90 @@ body {
     width: 100px;
     height: 100px;
     text-align: center;
+}
+
+.schools svg{
+    height: 30px;
+    width: 30px;
+}
+
+.removeMain {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#mainText {
+    font-size: 70px;
+    text-align: center;
+}
+
+#foot {
+    background-color: #f5a25d;
+}
+
+#footer {
+    display:flex;
+    transform: skewX(-45deg);
+    height: 500px;
+    width: 83.55%;
+    background-color: #f5a25d;
+
+}
+
+.orange {
+    
+    flex-basis: 40%;
+    background-color: #f9813a;
+    
+}
+
+.red {
+    background-color: #FF4B2B;
+    
+    flex-basis: 40%;
+    
+    
+}
+
+#textFooter {
+    font-size: 25px;
+    z-index: 1;
+    display: flex;
+    padding-left: 200px;
+    position: absolute;
+}
+
+#inputFoot {
+    border-radius: 27px;
+    width: 450px;
+    height: 40px;
+    margin: 35px 10px 0px 20px;
+}
+
+#buttonFoot {
+    height: 40px;
+    width: 90px;
+    border-radius: 23px;
+    margin-top: 37px ;
+}
+
+#aboutUs {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 70px;
+    position: absolute;
+}
+
+#names {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 150px;
+    position: absolute;
+}
+
+#names h1 {
+    padding: 40px;
 }

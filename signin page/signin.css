@@ -8,8 +8,12 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
-    height: 100vh;
+    height: 700px;
     margin: -20px 0 50px;
+    background-image: url(./28466.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position-y:753px ;
 }
 
 h1 {
