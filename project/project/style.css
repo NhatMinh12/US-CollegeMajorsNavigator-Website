@@ -1,5 +1,5 @@
 body{
-    margin: 0PX;
+    margin: 0px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -16,21 +16,57 @@ body{
 }
 h1{
     position: absolute;
-    padding-left: 400px;
+    padding-left: 350px;
     font-size: 4206969;
     top: 10%;
 
 }
 
 #Capa_1{
-    width: 50px;
     height: 50px;
+    width: 50px;
+    padding-bottom: 10px;
 }
-.majors{
+a{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: fit-content;
 }
+#div{
+   display: inline-flex;
+}
+.majorsContainer{
+    display: flex;
+    justify-content: center;
+}
+.majors{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    background-color: #edf3f6;
+    transition: background-color .15s linear;   
+    border: 0.5px solid white;
+    align-content: center;
+}
+.majors:hover{
+    cursor: pointer;
+    background-color: #05293c;
+}
+.majors:hover p{
+    color: white
+}
+p{
+    max-width: 200px;
+}
+
 
 
     
