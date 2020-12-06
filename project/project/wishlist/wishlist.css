@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 700000px;
+}
+
+
+#menu {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #FF4B2B;
+    justify-content: center;
+}
+
+#menu svg {
+    height: 30px;
+    width: 30px;
+    padding: 20px 100px 0px 100px;
+    fill: #fbf6f0;
+}
+
+#menu input {
+    height: 50px;
+    margin: 5px 10px 0px 10px;
+    width: 350px;
+    
+}
+
+#intro {
+    display: flex;
+    width: 100%;
+    background-color: #f4f4f2;
+}
+
+#intro img {
+    
+    height: 500px;
+    object-fit: cover;
+    padding-left: 710px;
+    
+}
+
+#intro h2 {
+    font-size: 70px;
+    position: absolute;
+    left: 230px;
+}
+
+#intro p {
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+#main {
+    margin: 100px 100px 0px 100px;
+    
+    display: flex;
+}
+
+.schools { 
+    width: 250px;
+    background-color: #ebebeb;
+    
+
+}
+
+.schools img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.schools a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
