@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./wishlist.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <script src="wishlist.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -16,10 +18,10 @@
         <svg height="511pt" viewBox="0 1 511 511.999" width="511pt" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" />
-            </svg>
+        </svg>
 
-            <select class="search" name="states">
-            <option value="">Select your state</option>
+        <select class="search" name="states" id="stateSelect">
+            <!-- <option value="">Select your state</option> -->
             <option value="California">California</option>
             <option value="Florida">Florida</option>
             <option value="Texas">Texas</option>
@@ -70,8 +72,8 @@
             <option value="South Dakota">South Dakota</option>
             <option value="New Hampshire">New Hampshire</option>
             <option value="North Dakota">North Dakota</option>
-            </select>
-        <select name="Discipline" class="search">
+        </select>
+        <select name="Discipline" class="search" id="majorSelect">
             <option value="Agriculture & Forestry">Agriculture & Forestry</option>
             <option value="Applied Sciences & Professions">Applied Sciences & Professions</option>
             <option value="Arts, Design & Architecture">Arts, Design & Architecture</option>
@@ -86,14 +88,44 @@
             <option value="Law">Law</option>
             <option value="Medicine & Health">Medicine & Health</option>
             <option value="Natural Sciences & Mathematics">Natural Sciences & Mathematics</option>
-            <option value="">Social Sciences</option>
+            <option value="Social Sciences">Social Sciences</option>
         </select>
+        <svg version="1.1" id="btnSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve">
+<g>
+	<path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3
+		s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4
+		C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3
+		s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z"/>
+</g>
+</svg>
         <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" />
-            </svg>
+        </svg>
 
-            <svg id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m13.5 21h-4c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h4c.827 0 1.5-.673 1.5-1.5v-5c0-.276.224-.5.5-.5s.5.224.5.5v5c0 1.378-1.121 2.5-2.5 2.5z"/></g><g><path d="m23.5 11h-10c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h10c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m8 24c-.22 0-.435-.037-.638-.109l-5.99-1.997c-.82-.273-1.372-1.035-1.372-1.894v-18c0-1.103.897-2 2-2 .222 0 .438.037.639.11l5.989 1.996c.82.272 1.372 1.034 1.372 1.894v18c0 1.103-.897 2-2 2zm-6-23c-.552 0-1 .449-1 1v18c0 .428.276.808.688.946l6 2c.656.233 1.312-.292 1.312-.946v-18c0-.429-.276-.809-.688-.945l-6-2c-.103-.037-.208-.055-.312-.055z"/></g><g><path d="m15.5 8c-.276 0-.5-.224-.5-.5v-5c0-.827-.673-1.5-1.5-1.5h-11.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h11.5c1.379 0 2.5 1.122 2.5 2.5v5c0 .276-.224.5-.5.5z"/></g><g><path d="m19.5 15c-.128 0-.256-.049-.354-.146-.195-.195-.195-.512 0-.707l3.646-3.646-3.646-3.646c-.195-.195-.195-.512 0-.707s.512-.195.707 0l4 4c.195.195.195.512 0 .707l-4 4c-.097.096-.225.145-.353.145z"/></g></svg>
+        <svg id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path
+                    d="m13.5 21h-4c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h4c.827 0 1.5-.673 1.5-1.5v-5c0-.276.224-.5.5-.5s.5.224.5.5v5c0 1.378-1.121 2.5-2.5 2.5z" />
+            </g>
+            <g>
+                <path d="m23.5 11h-10c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h10c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+            </g>
+            <g>
+                <path
+                    d="m8 24c-.22 0-.435-.037-.638-.109l-5.99-1.997c-.82-.273-1.372-1.035-1.372-1.894v-18c0-1.103.897-2 2-2 .222 0 .438.037.639.11l5.989 1.996c.82.272 1.372 1.034 1.372 1.894v18c0 1.103-.897 2-2 2zm-6-23c-.552 0-1 .449-1 1v18c0 .428.276.808.688.946l6 2c.656.233 1.312-.292 1.312-.946v-18c0-.429-.276-.809-.688-.945l-6-2c-.103-.037-.208-.055-.312-.055z" />
+            </g>
+            <g>
+                <path
+                    d="m15.5 8c-.276 0-.5-.224-.5-.5v-5c0-.827-.673-1.5-1.5-1.5h-11.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h11.5c1.379 0 2.5 1.122 2.5 2.5v5c0 .276-.224.5-.5.5z" />
+            </g>
+            <g>
+                <path
+                    d="m19.5 15c-.128 0-.256-.049-.354-.146-.195-.195-.195-.512 0-.707l3.646-3.646-3.646-3.646c-.195-.195-.195-.512 0-.707s.512-.195.707 0l4 4c.195.195.195.512 0 .707l-4 4c-.097.096-.225.145-.353.145z" />
+            </g>
+        </svg>
     </section>
     <!-- intro -->
     <section id="intro">
@@ -108,117 +140,133 @@
 
     <h3 id="mainText">Your goal</h3>
     <section id="main">
-        
+
         <div class="schools"><a href="https://www.harvard.edu/">
                 <img src="https://specials-images.forbesimg.com/imageserve/1214288769/960x0.jpg?fit=scale" alt="">
                 <h4>Harvard</h4>
                 <p>#5 computer science</p>
                 <p>Cambridge, Massachusetts</p>
-        
+
             </a>
             <div class="removeMain">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 496.096 496.096" style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
-    <g>
-        <g>
-            <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496.096 496.096"
+                    style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
                 L13.754,2.342C10.576-0.727,5.512-0.639,2.442,2.539c-2.994,3.1-2.994,8.015,0,11.115l234.344,234.344L2.442,482.342
                 c-3.178,3.07-3.266,8.134-0.196,11.312s8.134,3.266,11.312,0.196c0.067-0.064,0.132-0.13,0.196-0.196L248.098,259.31
-                l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z"/>
-            </g>
-        </g>
-        
-        </svg></div>
-        
+                l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z" />
+                        </g>
+                    </g>
+
+                </svg></div>
+
         </div>
+
+        <div class="schools"><a href="https://www.harvard.edu/">
+                <img src="https://specials-images.forbesimg.com/imageserve/1214288769/960x0.jpg?fit=scale" alt="">
+                <h4>Harvard</h4>
+                <p>#3</p>
+                <p>Cambridge, Massachusetts</p>
+
+            </a>
+            <div class="removeMain">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496.096 496.096"
+                    style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
+            L13.754,2.342C10.576-0.727,5.512-0.639,2.442,2.539c-2.994,3.1-2.994,8.015,0,11.115l234.344,234.344L2.442,482.342
+            c-3.178,3.07-3.266,8.134-0.196,11.312s8.134,3.266,11.312,0.196c0.067-0.064,0.132-0.13,0.196-0.196L248.098,259.31
+            l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z" />
+                        </g>
+                    </g>
+
+                </svg></div>
+
+        </div>
+
 
 
         <div class="schools"><a href="https://www.harvard.edu/">
-            <img src="https://specials-images.forbesimg.com/imageserve/1214288769/960x0.jpg?fit=scale" alt="">
-            <h4>Harvard</h4>
-            <p>#5 computer science</p>
-            <p>Cambridge, Massachusetts</p>
-    
-        </a>
-        <div class="removeMain">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 496.096 496.096" style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
-<g>
-    <g>
-        <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
-            L13.754,2.342C10.576-0.727,5.512-0.639,2.442,2.539c-2.994,3.1-2.994,8.015,0,11.115l234.344,234.344L2.442,482.342
-            c-3.178,3.07-3.266,8.134-0.196,11.312s8.134,3.266,11.312,0.196c0.067-0.064,0.132-0.13,0.196-0.196L248.098,259.31
-            l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z"/>
-        </g>
-    </g>
-    
-    </svg></div>
-    
-    </div>
+                <img src="https://specials-images.forbesimg.com/imageserve/1214288769/960x0.jpg?fit=scale" alt="">
+                <h4>Harvard</h4>
+                <p>#5 computer science</p>
+                <p>Cambridge, Massachusetts</p>
 
-
-    <div class="schools"><a href="https://www.harvard.edu/">
-        <img src="https://specials-images.forbesimg.com/imageserve/1214288769/960x0.jpg?fit=scale" alt="">
-        <h4>Harvard</h4>
-        <p>#5 computer science</p>
-        <p>Cambridge, Massachusetts</p>
-
-    </a>
-    <div class="removeMain">
-    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 496.096 496.096" style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
-<g>
-<g>
-    <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
+            </a>
+            <div class="removeMain">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496.096 496.096"
+                    style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
         L13.754,2.342C10.576-0.727,5.512-0.639,2.442,2.539c-2.994,3.1-2.994,8.015,0,11.115l234.344,234.344L2.442,482.342
         c-3.178,3.07-3.266,8.134-0.196,11.312s8.134,3.266,11.312,0.196c0.067-0.064,0.132-0.13,0.196-0.196L248.098,259.31
-        l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z"/>
-    </g>
-</g>
+        l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z" />
+                        </g>
+                    </g>
 
-</svg></div>
+                </svg></div>
 
-</div>
+        </div>
 
 
     </section>
-<section id="foot">
-    <div id="textFooter">
-        <h1>Send your questions through Email:</h1>
-        <input id="inputFoot" type="email" placeholder="type your email">
-        <button id="buttonFoot">Send</button>
-    </div>
+    <section id="foot">
+        <div id="textFooter">
+            <h1>Send your questions through Email:</h1>
+            <input id="inputFoot" type="email" placeholder="type your email">
+            <button id="buttonFoot">Send</button>
+        </div>
 
-    <div id="aboutUs">
-        <h1>About us:</h1>
-    </div>
+        <div id="aboutUs">
+            <h1>About us:</h1>
+        </div>
 
-    <div id="names">
-        <div>
-            <img src="" alt="">
-            <div>
-                <h2>Phạm Quý Dương</h2>
-                <div><span></span>SDT</div>
-                <div><span> </span>Email</div>
+        <div id="names">
+            <div class="name">
+                <img src="https://store-images.s-microsoft.com/image/apps.28411.13510798887593857.411c7070-8254-4bc7-9822-93212e9b3eaa.d5650289-0ad1-4560-ac30-38a18a1847bb"
+                    alt="">
+                <div>
+
+                    <h2>Phạm Quý Dương</h2>
+                </div>
+            </div>
+            <div class="name">
+                <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.15752-9/127757653_4039021069451981_6891031468973471008_n.png?_nc_cat=102&ccb=2&_nc_sid=ae9488&_nc_ohc=MwrSer6M3Y0AX83jyHF&_nc_ht=scontent.fhan2-1.fna&oh=10298f3a0e86ecf4d1e480755647b31b&oe=5FF33FCB" alt="">
+                <div>
+                    <h2>Phạm Tuấn Nhật Minh</h2>
+                </div>
+            </div>
+            <div class="name">
+                <img src="https://tapchilamdep.com/wp-content/uploads/2019/10/Jennie-BLACKPINK-1024x683.jpg" alt="">
+                <div>
+                    <h2>Phạm Đăng Sơn</h2>
+                </div>
             </div>
         </div>
-        <h2>Phạm Tuấn Nhật Minh</h2>
-        <h2>Phạm Đăng Sơn</h2>
-        <h2></h2>
-    </div>
 
-<div id="footer">
-    
-    
-    <div class="orange"><!--f9813a --></div>
-    <div class="red"></div>
-    <div class="orange"><!--f9813a --></div>
-
-    
-</div>
+        <div id="footer">
 
 
-</section>
+            <div class="orange">
+                <!--f9813a -->
+            </div>
+            <div class="red"></div>
+            <div class="orange">
+                <!--f9813a -->
+            </div>
+
+
+        </div>
+
+
+    </section>
 </body>
 
 </html>
