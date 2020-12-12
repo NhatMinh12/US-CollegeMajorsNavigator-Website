@@ -16,7 +16,7 @@ body {
 #menu svg {
     height: 30px;
     width: 30px;
-    padding: 20px 100px 0px 100px;
+    padding: 20px 50px 20px 20px;
     fill: #fbf6f0;
 }
 
@@ -161,7 +161,7 @@ border: 50px;
     font-size: 25px;
     z-index: 1;
     display: flex;
-    padding-left: 200px;
+    padding-left: 150px;
     position: absolute;
 }
 
@@ -182,8 +182,8 @@ border: 50px;
 #aboutUs {
     font-size: 25px;
     z-index: 1;
-    padding-left: 200px;
-    padding-top: 70px;
+    padding-left: 150px;
+    padding-top: 100px;
     position: absolute;
 }
 
