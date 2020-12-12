@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    background-color: #f6f5f7;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+ 
+#menu {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #FF4B2B;
+    justify-content: center;
+}
+ 
+#menu svg {
+    height: 30px;
+    width: 30px;
+    padding: 20px 100px 0px 100px;
+    fill: #fbf6f0;
+}
+ 
+.search {
+    height: 50px;
+    margin: 5px 10px 0px 10px;
+    width: 350px;
+}
+ 
+ 
+#top {
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+#top svg {
+    height: 100px;
+}
+ 
+#top h1 {
+    font-size: 40px;
+}
+ 
+#bodyText {
+background-image: url(https://www.acq-intl.com/wp-content/uploads/2019/12/Kettani-Law-Firm-1.jpg);
+background-position: center;
+background-size: cover;
+border: 50px;
+ 
+}
+ 
+#text {
+    background-color: white;
+    opacity: 75%;
+    width: 55%;
+    padding: 50px;
+    margin: auto;
+}
+ 
+#text p {
+    opacity: 100%;
+    font-size: 18px;
+}
+ 
+#text h1 {
+    font-size: 28px;
+}
+ 
+.schools {
+    width: 250px;
+    background-color: #ebebeb;
+    height: 340px;
+    margin-bottom: 50px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+ 
+.schools img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+ 
+.schools a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+ 
+.schools svg{
+    height: 30px;
+    width: 30px;
+}
+ 
+.removeMain {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+ 
+#universities {
+    margin-top: 50px;
+    display: flex;
+ 
+}
+ 
+.slick-slide{
+    margin:70px;
+  }
+  .slick-slide img{
+    width:100%;
+    /* border: 2px solid #fff; */
+  }
+ 
+#textUni {
+    text-align: center;
+}
+ 
+#textUni h1 {
+    margin-top: 50px;
+    font-size: 35px;
+}
+ 
+#foot {
+    background-color: #f5a25d;
+}
+ 
+#footer {
+    display:flex;
+    transform: skewX(-45deg);
+    height: 500px;
+    width: 83.55%;
+    background-color: #f5a25d;
+ 
+}
+ 
+.orange {
+    
+    flex-basis: 40%;
+    background-color: #f9813a;
+    
+}
+ 
+.red {
+    background-color: #FF4B2B;
+    
+    flex-basis: 40%;
+    
+    
+}
+ 
+#textFooter {
+    font-size: 25px;
+    z-index: 1;
+    display: flex;
+    padding-left: 200px;
+    position: absolute;
+}
+ 
+#inputFoot {
+    border-radius: 27px;
+    width: 450px;
+    height: 40px;
+    margin: 35px 10px 0px 20px;
+}
+ 
+#buttonFoot {
+    height: 40px;
+    width: 90px;
+    border-radius: 23px;
+    margin-top: 37px ;
+}
+ 
+#aboutUs {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 70px;
+    position: absolute;
+}
+ 
+#names {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 150px;
+    position: absolute;
+    display: flex;
+}
+ 
+#names h1 {
+    padding: 40px;
+}
+ 
+.name {
+    margin: 30px 50px 0px 50px;
+    text-align: center;
+}
+ 
+.name img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+    
