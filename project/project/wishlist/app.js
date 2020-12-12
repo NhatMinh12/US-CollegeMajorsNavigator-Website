@@ -52,9 +52,17 @@ function renderElement(obj) {
                     l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z" />
                             </g>
                         </g>
-
                     </svg></div>
                 </div>`;
     
     main.insertAdjacentHTML('beforeend', html);
 }
+
+$(document).ready(function(){
+    $('#main').slick({
+    slidesToShow: 3,
+    dots:true,
+    centerMode: true,
+    arrow:false,
+    });
+  });
