@@ -161,7 +161,7 @@ border: 50px;
     font-size: 25px;
     z-index: 1;
     display: flex;
-    padding-left: 200px;
+    padding-left: 150px;
     position: absolute;
 }
  
@@ -182,7 +182,7 @@ border: 50px;
 #aboutUs {
     font-size: 25px;
     z-index: 1;
-    padding-left: 200px;
+    padding-left: 150px;
     padding-top: 70px;
     position: absolute;
 }
