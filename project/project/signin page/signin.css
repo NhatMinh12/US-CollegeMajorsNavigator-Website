@@ -10,6 +10,10 @@ body {
     font-family: 'Nunito', sans-serif;
     height: 100vh;
     margin: -20px 0 50px;
+    background-image: url(https://wallpaperaccess.com/full/142544.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
 }
 
 h1 {
@@ -186,4 +190,13 @@ input {
 
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
+}
+
+.Btn {
+    cursor: pointer;
+}
+
+.Btn a {
+    text-decoration: none;
+    color: white;
 }

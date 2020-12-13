@@ -9,3 +9,4 @@ signUpButton.addEventListener('click', function () {
 signInButton.addEventListener('click', function () {
     container.classList.remove('right-panel-active')
 })
+
