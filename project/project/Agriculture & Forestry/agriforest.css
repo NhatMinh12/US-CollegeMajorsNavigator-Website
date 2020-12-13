@@ -211,4 +211,6 @@ border: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
-
+.heartActive{
+    fill: red;
+}
