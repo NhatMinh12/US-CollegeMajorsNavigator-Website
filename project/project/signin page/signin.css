@@ -192,3 +192,11 @@ input {
     transform: translateX(20%);
 }
 
+.Btn {
+    cursor: pointer;
+}
+
+.Btn a {
+    text-decoration: none;
+    color: white;
+}

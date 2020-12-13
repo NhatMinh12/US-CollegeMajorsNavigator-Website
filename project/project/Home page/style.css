@@ -14,11 +14,12 @@ body{
     display: flex;
     flex-direction: row;
 }
-h1{
+#topText{
     position: absolute;
-    padding-left: 350px;
+    padding-left: 370px;
     font-size: 4206969;
     top: 10%;
+    padding-top: 170px;
 
 }
 
@@ -33,6 +34,7 @@ a{
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    color:#41aea9;
 }
 #div{
    display: inline-flex;
@@ -63,10 +65,124 @@ a{
 .majors:hover p{
     color: white
 }
+
+.majors:hover svg {
+    fill:  white;
+}
+
+
 p{
     max-width: 200px;
 }
 
+#menu {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #FF4B2B;
+    justify-content: center;
+}
 
+#menu svg {
+    height: 30px;
+    width: 30px;
+    padding: 20px 100px 0px 100px;
+    fill: #fbf6f0;
+}
 
+.search {
+    height: 50px;
+    margin: 5px 10px 0px 10px;
+    width: 350px;
+}
+
+.twl{
+    fill: white;
+}
     
+#light {
+    cursor: pointer;
+}
+
+#foot {
+    background-color: #f5a25d;
+}
+
+#footer {
+    display:flex;
+    transform: skewX(-45deg);
+    height: 500px;
+    width: 83.55%;
+    background-color: #f5a25d;
+
+}
+
+.orange {
+    
+    flex-basis: 40%;
+    background-color: #f9813a;
+    
+}
+
+.red {
+    background-color: #FF4B2B;
+    
+    flex-basis: 40%;
+    
+    
+}
+
+#textFooter {
+    font-size: 25px;
+    z-index: 1;
+    display: flex;
+    padding-left: 150px;
+    position: absolute;
+}
+
+#inputFoot {
+    border-radius: 27px;
+    width: 450px;
+    height: 40px;
+    margin: 35px 10px 0px 20px;
+}
+
+#buttonFoot {
+    height: 40px;
+    width: 90px;
+    border-radius: 23px;
+    margin-top: 37px ;
+}
+
+#aboutUs {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 150px;
+    padding-top: 100px;
+    position: absolute;
+}
+
+#names {
+    font-size: 25px;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 150px;
+    position: absolute;
+    display: flex;
+}
+
+#names h1 {
+    padding: 40px;
+}
+
+.name {
+    margin: 30px 50px 0px 50px;
+    text-align: center;
+}
+
+.name img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
